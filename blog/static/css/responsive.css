@@ -1,0 +1,326 @@
+@media only screen and (max-width: 2560px) {
+    .alt-bg, .woocommerce-breadcrumb {
+        margin-left: -710px;
+        margin-right: -710px;
+        padding-left: 710px;
+        padding-right: 710px;
+    }
+}
+@media only screen and (max-width: 1920px) {
+    .alt-bg, .woocommerce-breadcrumb {
+        margin-left: -400px;
+        margin-right: -400px;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .alt-bg, .woocommerce-breadcrumb {
+        margin-left: -113px;
+        margin-right: -113px;
+        padding-left: 113px;
+        padding-right: 113px;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .al-horizontal{
+        transform: translateY(5%);
+        -webkit-transform: translateY(5%);
+        -ms-transform: translateY(5%);
+        -o-transform: translateY(5%);
+    }
+}
+/* ================== Large Destop ======================= */
+@media only screen and (max-width: 1200px) {
+    .container-page-boxed{
+        width: 100%;
+    }
+    .rit-portfolio-content, .rit-portfolio-content a{
+        font-size: 11px;
+    }
+    .rit-portfolio-content h4, .rit-portfolio-content h3{
+        font-size: 20px;
+    }
+}
+
+/* ================== Small Destop ======================= */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link{
+        padding: 0 18px;
+    }
+    .rit-recent-item .post-info,
+    .rit-course-boxed .article-meta > a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .short-des{
+        font-size: 90%;
+    }
+    .al-horizontal{
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        left: 30px !important;
+    }
+    .al-horizontal p{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+/* ================== Large Mobile ======================= */
+@media only screen and (max-width: 992px) {
+    /* single */
+    .ground-meta-course > *{
+        padding: 0;
+    }
+    .rit-news-inner{
+        padding: 0;
+        margin: 0;
+    }
+    .post-course .ground-meta-course .article-meta{
+        float: none;
+    }
+    .single-content .entry-title{
+        font-size: 22px;
+    }
+    /*===========*/
+    #masthead .container{
+        width: auto;
+    }
+    #logo,.sticky-wrapper{
+        min-height: 80px;
+    }
+    .is-sticky .logo{
+        display: none;
+    }
+    .is-sticky .logo-sticky{
+        display: block;
+    }
+    #header-top{
+        display: none;
+    }
+    .site-info{
+        float: right;
+    }
+    .site-header.header-position-absolute{
+        position: relative;
+    }
+    #header-top{
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #header-top span i{
+        display: none;
+    }
+    #header-top [class*="header-top-"]{
+        display: inline-block;
+        float: none !important;
+    }
+    #header-top .header-top-left span{
+        margin-right: 25px;
+    }
+    #header-top .header-top-left span:last-child{
+        margin-right: 0;
+    }
+    #header-top .rit-search {
+        border-right: none;
+        margin-right: 0;
+        padding-right: 10px;
+    }
+    #logo, #logo-retina{
+        float: left;
+    }
+    #logo .logo-sticky{
+        left: 15px;
+    }
+    .menu-mobile .rit-recent-item a{
+        color: #333;
+    }
+    .rit-recent-item .post-info{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rit-element-course .rit-button {
+        padding: 0 10px;
+    }
+    .bg-attachment-scroll.vc_row[class*="vc_custom_"]{
+        background-position: right 0 !important;
+    }
+    .search-wrap .search-form-overlay{width: 90%}
+    #footer-center{
+        padding-bottom: 50px;
+    }
+    .coppy-right{
+        text-align: center;
+        border: none;
+    }
+    #coppy-right .pull-right{
+        float: none !important;
+        display: inline-block;
+    }
+    .woocommerce #sidebar-left,
+    .woocommerce #sidebar-right{
+        float: left;
+        width: 100%;
+        clear: both;
+    }
+    .woocommerce #sidebar-left{
+        position: relative;
+        z-index: 9;
+    }
+    .woocommerce #main{
+        clear: both;
+    }
+    .woocommerce #content div.product div.images,
+    .woocommerce div.product div.images,
+    .woocommerce-page #content div.product div.images,
+    .woocommerce-page div.product div.images,
+    .woocommerce #content div.product div.summary,
+    .woocommerce div.product div.summary,
+    .woocommerce-page #content div.product div.summary,
+    .woocommerce-page div.product div.summary,
+    .woocommerce .cart-collaterals .cart_totals,
+    .woocommerce-page .cart-collaterals .cart_totals,
+    .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
+    .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2{
+        width: 100% !important;
+    }
+    .woocommerce-cart #content table.cart td.actions .coupon .input-text{
+        width: 100% !important;
+    }
+    .woocommerce-cart .woocommerce .cart .button,
+    .woocommerce-cart .woocommerce .cart input.button{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    .woocommerce-cart table.cart td, .woocommerce-cart table.cart thead{
+        display: none;
+    }
+    .woocommerce-cart table.cart td, .woocommerce-cart table.cart th{
+        display: block;
+    }
+    .site-footer .widget > div,
+    .widget-area > ul,
+    .widget-area > div,
+    .widget > ul,
+    .widget > div,
+    .widget > form{
+        display: none;
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+    .site-footer .widget-title,
+    .widget .widget-title,
+    .widget-area .widget-title{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        margin-bottom: 17px;
+        padding-bottom: 18px;
+        position: relative;
+    }
+    .site-footer .widget-title:before,
+    .widget .widget-title:before,
+    .widget-area .widget-title:before{
+        content: "\f107";
+        font-family: "FontAwesome";
+        font-size: 27px;
+        font-weight: normal;
+        position: absolute;
+        right: 0;
+        top: -5px;
+    }
+    .site-footer .widget-title.open:before,
+    .widget .widget-title.open:before,
+    .widget-area .widget-title.open:before{
+        content: "\f106";
+    }
+    .site-footer .widget{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .widget{
+        padding: 0;
+    }
+    #sidebar-right{
+        margin-top: 60px;
+    }
+    .tparrows.rit-navigation{
+        border-width: 2px;
+        height: 34px;
+        width: 34px;
+    }
+    .tparrows.rit-navigation::before{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .rit-icon-box.style-boxed{
+        margin-bottom: 70px;
+    }
+    .al-horizontal.position-right {
+        padding: 40px 30px 40px 0;
+    }
+    .al-horizontal {
+        left: 30px !important;
+        padding-bottom: 40px;
+        position: relative;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .al-horizontal p{
+        font-size: 11px;
+    }
+    #comments-list ul.children > li > .comment-wrap{
+        padding-left: 20px;
+    }
+    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+}
+/* ================== Tablet ======================= */
+@media only screen and (max-width: 480px) {
+    /*donate form*/
+	.donate-popup .rit-paypal-form-wrapper{
+        width: 100%;
+        height: 500px;
+    }
+    .charitable-fieldset.odd h2{
+        font-size: 16px;
+        margin:40px 0 20px 0;
+    }
+    .charitable-form-fields .charitable-fieldset{
+        margin: 0;
+        padding: 0 5px 10px 5px;
+    }
+    .charitable-login-form{
+        padding: 8px;
+    }
+    .charitable-login-form #loginform{
+        padding: 0;
+    }
+    .login-lost {
+    top: 72%;
+    right: 3%;
+    }
+    /* single */
+    .single-content .entry-title{
+        font-size: 18px;
+    }
+    .course-raise{
+        margin: 12px 0 -15px;
+    }
+    .ground-meta-course{
+        padding-bottom: 0;
+    }
+}
+/* ================== Small Mobile ======================= */
+@media only screen and (max-width: 320px) {
+}

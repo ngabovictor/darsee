@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block ourMenu %}
+
+	{% for article in ours %}
+
+	<article class="rit-recent-item clear-left col-sm-4 col-md-4" id="p ">
+	    <div class="rit-course-inner">
+	        <div class="post-meta">
+	            <h5><a href=" ">{{article.name}}</a></h5>
+	        </div>
+
+	        <div class="post-image clearfix">
+	            <a href=" ">
+	                <img width="370" height="250" src="{{article.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 370px) 100vw, 370px">
+	            </a>
+
+	        </div>
+
+	        <div class="post-info">
+	            <div class="course-raise">
+	                <span class="number-raise">
+	                    {{article.caption}}
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	</article>
+
+	{% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- CAROUSEL HOME -->
+
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+      
+
+      <div class="carousel-inner">
+      {% for item in carousel %}
+
+        <div class="item {% if forloop.counter0 == 0 %} active {% endif %}">
+
+          <img class="carou-img" src="{{item.image.url}}" />
+
+          <div class="carousel-caption">
+            <h4 class="animated {{item.animation}}">{{item.caption}}</h4>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+
+      <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <!-- END OF CAROUSEL HOME -->
+
+        <br><br>
+
+    <!-- OTHER CONTENT -->
+
+    <div class="container">
+        <h4 align="center">Lorem Ipsum Dolor Sit Amet</h4>
+        <br>
+        <br>
+        <div class="row">
+
+        {% for item in ours %}
+
+            <div class="wow fadeInDown col-md-4 col-sm-4">
+                <img src="{{item.image.url}}" alt="">
+                <br>
+                <h4 align="center">{{item.name}}</h4>
+                <br>
+
+                <p>{{item.more |safe}}</p>
+            </div>
+
+        {% endfor %}
+
+
+    	</div>
+
+    <!-- END OF ANOTHER CONTENT 1 -->
+
+    <!-- ANOTHER CONTENT 2 WITH PANELS -->
+
+    <br><br>
+
+    <div class="for-panel">
+
+        <br><br>
+
+        <h4 align="center">Lorem Ipsum Dolor Sit Amet</h4>
+
+        <br><br>
+
+        <div class="container">
+            
+
+            <div class="row panels-media">
+
+                <div class="wow fadeInRight col-md-6 col-sm-6">
+                    <iframe class="iframe-panel" src="{{video.link}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
+                <div class="col-md-6 col-sm-6">
+                    <ul class="panel-list pull-left">
+
+                    {% for panel in panels %}
+
+                        <li class="wow fadeInUp">
+                            <div class="panel panel-color">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{{panel.name}}<span class="clickable pull-right"><i class="fa fa-chevron-up"></i></span></h3>
+                                    
+                                </div>
+
+                                <div class="panel-body">
+                                    <p>{{panel.more}}</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    {% endfor %}
+
+                    </ul>
+                </div>
+
+                <br>
+                <br>
+                
+            </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- END OF PANELS -->
+
+    <!-- MESSAGES AND QUOTES -->
+
+    <!-- CONTENT 3 MESSAGE & QUOTES -->
+
+
+    <div class="container dark">
+
+        <!-- CAROUSEL FOR MESSAGES AND QUOTES -->
+
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+      
+
+          <div class="carousel-inner">
+
+          {% for quo in quotes %}
+
+            <div class="item {% if forloop.counter0 == 0 %} active {% endif %}">
+              <div class="row mess-quo">
+                <div class="col-md-12 col-sm-12">
+                    <p class="wow flipInX message">
+                        {{quo.quote}}
+                    </p>
+                    
+                    <h4 class="message-by wow flipInY" align="center">{{quo.quote_by}}</h4>
+                </div>
+              </div>
+            </div>
+
+           {% endfor %}
+
+          </div>
+        </div>
+
+
+        <!-- END OF CAROUSEL -->
+        
+    </div>
+
+    <!-- END OF MESSAGES AND QUOTES -->
+
+
+    <!-- LATEST NEWS-->
+
+
+    <div class="container">
+        <br>
+        <br>
+        <h4 align="center">Latest News</h4>
+        <br>
+        <br>
+        <div class="row">
+
+        {% for article in articles|slice:":3" %}
+
+            <div class="col-md-4 col-sm-4">
+                <img class="wow fadeInDown" src="{{article.image.url}}" alt="">
+                <br>
+                <h4 class="blue" align="center">{{article.title}}</h4>
+                <p align="center" class="date">{{article.date}}</p>
+                <br>
+                <p class="wow fadeInUp" align="center">{{article.body |truncatechars:200}}<a href="/blog/article/{{article.pk}}" class="read-more pull-left">Read More...</a></p>
+                
+            </div>
+
+         {% endfor %}
+
+        </div>
+    </div>
+
+
+
+{% endblock %}

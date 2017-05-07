@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block ourMenu %}
+
+	{% for article in ours %}
+
+	<article class="rit-recent-item clear-left col-sm-4 col-md-4" id="p ">
+	    <div class="rit-course-inner">
+	        <div class="post-meta">
+	            <h5><a href=" ">{{article.name}}</a></h5>
+	        </div>
+
+	        <div class="post-image clearfix">
+	            <a href=" ">
+	                <img width="370" height="250" src="{{article.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 370px) 100vw, 370px">
+	            </a>
+
+	        </div>
+
+	        <div class="post-info">
+	            <div class="course-raise">
+	                <span class="number-raise">
+	                    {{article.caption}}
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	</article>
+
+	{% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+<br>
+<!-- POST DETAILS -->
+
+<div class="container wow fadeInDown">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="post-image" src="{{post.image.url}}" alt="">
+            <h4>{{post.title}}</h4>
+            <br>
+            {{post.body |safe}}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

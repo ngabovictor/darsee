@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block ourMenu %}
+
+	{% for article in ours %}
+
+	<article class="rit-recent-item clear-left col-sm-4 col-md-4" id="p ">
+	    <div class="rit-course-inner">
+	        <div class="post-meta">
+	            <h5><a href=" ">{{article.name}}</a></h5>
+	        </div>
+
+	        <div class="post-image clearfix">
+	            <a href=" ">
+	                <img width="370" height="250" src="{{article.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 370px) 100vw, 370px">
+	            </a>
+
+	        </div>
+
+	        <div class="post-info">
+	            <div class="course-raise">
+	                <span class="number-raise">
+	                    {{article.caption}}
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	</article>
+
+	{% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+<br>
+<!-- CONTENTS ABOUT US -->
+
+<div class="container wow fadeInDown">
+
+<!-- HEADER -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="about-title" align="center">Lorem ipsum dolor sit amet.</h4>
+            <p class="about-sub-title" align="center">Lorem Ipsum dolor sit amet</p>
+        </div>
+    </div>
+
+    <br>
+
+<!-- END OF HEADER -->
+
+<!-- ABOUT CONTENT -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/about.jpg' %}" alt="about">
+        </div>
+        <div class="col-md-6">
+            <h4>Lorem Ipsum</h4>
+            <br>
+            <ul>
+                {% for list in about_list %}
+
+                <li>{{list.item}}</li>
+
+                {% endfor %}
+            </ul>
+        </div>
+
+        
+        <!-- END OF ABOUT CONTENT -->
+
+        
+
+    </div>
+
+</div>
+
+<!-- ABOUT CONTENT 2 -->
+
+<br>
+<br>
+
+<div class="container colored-bg wow fadeInDown">
+<br>
+    <div class="row">
+
+    {% for item in about_grids %}
+        <div class="col-md-4 col-sm-4">
+            <img class="icon-about" src="{{item.inage.url}}" alt="">
+
+            <div class="absolute-icon">
+            <br><br>
+                <h4 align="center">{{item.title}}</h4>
+                <br>
+                <p class="not-full" align="center">{{item.description}}</p>
+                <br>
+                
+            </div>      
+            
+        </div>
+
+    {% endfor %}
+
+        
+    </div>
+    <br><br>
+</div>
+
+<!-- END OF CONTENT 2 -->
+<br>
+<!-- CONTENTS 3 -->
+
+<div class="container wow fadeInUp">
+    <div class="row">
+        <div class="col-md-12">
+
+        <!-- SUB CONTNET 1 -->
+
+            <h4>Lorem Ipsum dolor sit amet.</h4>
+            <br>
+
+            {% for item in about_paragraphs %}
+
+            <p>{{item.paragraph}}</p>
+
+            {% endfor %}
+
+        <!-- END OF SUB CONTENT 2 -->
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block ourMenu %}
+
+	{% for article in ours %}
+
+	<article class="rit-recent-item clear-left col-sm-4 col-md-4" id="p ">
+	    <div class="rit-course-inner">
+	        <div class="post-meta">
+	            <h5><a href=" ">{{article.name}}</a></h5>
+	        </div>
+
+	        <div class="post-image clearfix">
+	            <a href=" ">
+	                <img width="370" height="250" src="{{article.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 370px) 100vw, 370px">
+	            </a>
+
+	        </div>
+
+	        <div class="post-info">
+	            <div class="course-raise">
+	                <span class="number-raise">
+	                    {{article.caption}}
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	</article>
+
+	{% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+<br>
+
+<!-- Blov cintents -->
+
+    <div class="container main-content">
+        <div class="row">
+
+        {% for post in posts %}
+
+            <div class="col-md-3 col-sm-3 blog-post">
+                
+                <a class="wow fadeInDown" href="post/{{post.pk}}">
+                    <img src="{{post.image.url}}" alt="" class="blog-post-image">
+                    <h4 class="blog-post-title" align="center">
+                        {{post.title}}
+                    </h4>
+                </a>
+                <p align="center" class="date">{{post.date}}</p>
+                <br>
+
+
+                <p class="content wow fadeInUp">
+                    {{post.body |truncatechars:200}}
+                </p>
+
+                
+
+                
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+{% endblock %}

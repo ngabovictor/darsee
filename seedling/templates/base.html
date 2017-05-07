@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+
+    
+    {% load staticfiles %}
+
+    {% block title %}
+            
+    {% endblock %}
+
+    <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+
+
+
+
+    <link rel='stylesheet' id='sb_instagram_icons-css'  href='{% static "css/font-awesome.css" %}' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+
+
+    <link rel='stylesheet' id='sb_instagram_styles-css'  href='{% static "css/sb-instagram.css" %}' type='text/css' media='all' />
+
+
+    <link rel='stylesheet' id='rs-plugin-settings-css'  href='{% static "css/rev-slider-settings.css" %}' type='text/css' media='all' />
+
+
+    <link rel='stylesheet' id='rit-core-front-css-css'  href='{% static "css/rit-core-front.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='rit-blog-css-css'  href='{% static "css/blog-style.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='rit-masonry-css-css'  href='{% static "css/rit-masonry.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='rit-news-css-css'  href='{% static "css/rit-news.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='charitable-styles-css'  href='{% static "css/charitable.min.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='megamenu-css'  href='{% static "css/megamenu-style.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='dashicons-css'  href='{% static "css/dashicons.min.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='bootstrap-css'  href='{% static "css/bootstrap.min.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='font-awesome-css'  href='{% static "css/font-awesome.min.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='owl.carousel-css'  href='{% static "css/owl.carousel.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='owl.theme-css'  href='{% static "css/owl.theme.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='bxslider-css'  href='{% static "css/jquery.bxslider.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='multiscroll-css'  href='{% static "css/jquery.multiscroll.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='rit-google-font-css'  href='//fonts.googleapis.com/css?family=Hind%3A300%2Cregular%2C500%2C600%2C700%7CDosis%3A300%2Cregular%2C500%2C700&#038;ver=4.7.3' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='ri-ri_charitable_style-style-css'  href='{% static "css/ch-style.css" %}' type='text/css' media='all' />
+    <link rel='stylesheet' id='ri_charitable_responsive_css-css'  href='{% static "css/responsive.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='newsletter-subscription-css'  href='{% static "css/ri-sub-style.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='js_composer_front-css'  href='{% static "css/js_composer.min.css" %}' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='woocommerce-custom-css'  href='{% static "css/woocommerce-layout.css" %}' type='text/css' media='all' />
+
+    <script type='text/javascript' src='{% static "js/jquery.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery-3.0.0.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/jquery-migrate.min.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/jquery.themepunch.tools.min.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/jquery.themepunch.revolution.min.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/rit-core-front.js" %}'></script>
+
+    <script src="{% static 'js/all.js' %}"></script>
+
+    <meta name="generator" content="Seedling" />
+
+
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+</head>
+
+
+<body>
+
+   <!-- Header -->
+
+    <header id="masthead" class="site-header clearfix header-position-relative">
+
+            <!-- Header Top -->
+
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+
+        <!-- Header Top Left -->
+                    <div class="col-sm-6 col-md-6">
+                         <div class="header-top-left">
+                             <div class="header-top-left-static">
+                                 <span><i class="fa fa-envelope"></i><a href="#">hello@company.com</a></span>
+                                 <span><i class="fa fa-phone"></i>+00 123 456 789</span>
+                             </div>
+                         </div>
+                    </div>
+
+                <!-- Header Top Right -->
+
+                     <div class="col-sm-6 col-md-6">
+                         <div class="header-top-right pull-right">
+
+                <!-- Header Top Search -->
+
+                            <div class="pull-left">
+                                <div class="search-mini rit-search hidden-sm hidden-xs">
+                                    <form method="get" class="ajax-search-form clearfix" action=" ">
+                                        <input type="text" class="search-field" name="s"
+                                               onblur="this.placeholder = 'Search...'" 
+                                               onfocus="this.placeholder = ''"
+                                               placeholder="Search..." autocomplete="off"/>
+                                        <span class="fa-search fa"></span>
+
+
+                                    </form>
+                            </div>
+
+                            <div class="rit-search visible-sm visible-xs">
+                                <a href="#" class="rit-button-search" id="rit-button-search">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                            </div>
+
+                                <!-- Header Top Social -->
+
+                            <div class="rit-social no-name pull-left" >
+                                <ul class="social-share">
+                                    <li class="twitter"><a href=" " target="_blank"><span>twitter</span><i class="fa fa-twitter"></i></a></li>
+
+                                    <li class="facebook"><a href=" " target="_blank"><span>facebook</span><i class="fa fa-facebook"></i></a></li>
+
+                                    <li class="dribbble"><a href=" " target="_blank"><span>dribbble</span><i class="fa fa-dribbble"></i></a></li>
+
+                                    <li class="skype"><a href=" " target="_blank"><span>skype</span><i class="fa fa-skype"></i></a></li>
+
+                                    <li class="googleplus"><a href=" " target="_blank"><span>google +</span><i class="fa fa-google-plus"></i></a></li>
+
+                                    <li class="instagram"><a href=" " target="_blank"><span>instagram</span><i class="fa-instagram fa"></i></a></li>
+                                </ul>
+                            </div>
+
+                         </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Header bottom -->
+
+        <div id="sticker"><div class="container">
+            <div class="row">
+                 <div class="header-inner">
+                    <div class="search-wrap rit-search">
+                        <div class="search-form-overlay">
+                            <form method="get" class="ajax-search-form clearfix" action=" ">
+                                <input type="text" class="search-field" name="s" placeholder="type &amp; hit enter..." autocomplete="off" />
+                                <i class="fa fa-search"></i>
+                            </form>
+                        </div>
+
+                        <span class="fs1 icon-close"></span>
+                    </div>
+
+
+                    <div class="menu-mobile visible-xs visible-sm puller"></div>
+
+                    <a class="col-md-3 col-sm-3 col-xs-3 navbar-brand" href="/home">
+                        <img class="large-logo hidden-xs" src="{% static 'main/large.png' %}" alt="Seedling">
+                        <img class="small-logo hidden-lg hidden-md hidden-sm" src="{% static 'main/small.png' %}" alt="Seedling">
+                    </a>
+
+        <!-- Navigation Menu -->
+
+                    <div id="main-navigation" class="horizontal-menu hidden-xs hidden-sm border-right pl0 pr0 col-sm-9 col-md-9">
+                        <div id="mega-menu-wrap-primary" class="mega-menu-wrap">
+                            <div class="mega-menu-toggle" tabindex="0">
+                                <div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-right mega-toggle-block-1' id='mega-toggle-block-1'>
+                                    
+                                </div>
+                            </div>
+
+                            <ul id="mega-menu-primary" class="mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="disabled" data-effect-speed="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true">
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout' id=' '>
+
+                                    <a class="mega-menu-link" href="/" tabindex="0">Home</a>
+                                </li>
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-megamenu ' id=''>
+
+                                    <a class="mega-menu-link" href="" aria-haspopup="true" tabindex="0">Menu</a>
+
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item mega-menu-item-type-widget widget_text mega-menu-columns-6-of-6 mega-menu-item-text-14" id="mega-menu-item-text-14">
+                                            <div class="textwidget">
+                                                <div class="rit-element-builder rit-element-course rit-course-flat">
+                                                    <h2 class="rit-element-title rit-title-course">Lorem Ipsum
+                                                    </h2>
+
+                                                    <div class="rit-course-posts ">
+                                                        <div class="row">
+
+                                                        {% block ourMenu %}
+
+                                                        
+
+                                                            {% endblock %}
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout  ' id=' '>
+                                    <a class="mega-menu-link" href="/publications" tabindex="0">Publications</a>
+                                </li>
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout  ' id=' '>
+                                    <a class="mega-menu-link" href="/blog" tabindex="0">Blog</a>
+                                </li>
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout  ' id=' '>
+                                    <a class="mega-menu-link" href="/about" tabindex="0">About us</a>
+                                </li>
+
+                                <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout  ' id=' '>
+                                    <a class="mega-menu-link" href="/contact" tabindex="0">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- NAVBUTTON -->
+
+                    <div id="main-navigation-mobile" class="horizontal-menu hidden-xs hidden-sm hidden-md hidden-lg border-right pl0 pr0 col-sm-7 col-md-7">
+                        <div class="menu">
+                            <ul>
+                                <li class="page_item">
+                                    <a href="/">HOME</a>
+                                </li>
+
+                                <li class="page_item">
+                                    <a href="/publications">PUBLICATIONS</a>
+                                </li>
+
+                                <li class="page_item">
+                                    <a href="/blog">BLOG</a>
+                                </li>
+
+                                <li class="page_item">
+                                    <a href="/about">ABOUT US</a>
+                                </li>
+
+                                <li class="page_item">
+                                    <a href="/contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- CONTENTS -->
+
+{% block content %}
+
+{% endblock %}
+
+    <br>
+
+
+
+
+
+
+
+
+              
+       
+    <footer id="colophon" class="wow fadeInDown site-footer style-1 no-margin-content">
+        <div id="back-to-top">
+            <i class="fa fa-angle-up"></i>
+        </div>
+
+        <div id="footer-center" class="clearfix">
+            <div class="container footer-center-2">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div id="text-3" class="widget first widget_text">
+                            <h4 class="widget-title">Lorem Ipsum</h4>
+                            <div class="textwidget">
+                                <ul class="links footer-link">
+                                    <li><a href="#">Support center</a></li>
+                                    <li><a href="#">Customer Support</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Copyright</a></li>
+                                    <li><a href="#">Popular Campaign</a></li>
+                                </ul>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div id="text-11" class="widget widget_text">
+                            <h4 class="widget-title">Lorem Ipsum</h4>
+                            <div class="textwidget">
+                                <ul class="links footer-link">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Our Rules</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Term Of Use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div id="text-2" class="widget last widget_text">
+                            <h4 class="widget-title">Lorem Ipsum</h4>
+                            <div class="textwidget">
+                                <ul class="links footer-link">
+                                    <li><a href="#">Visiting Campus</a></li>
+                                    <li><a href="#">Terms and conditions</a></li>
+                                    <li><a href="#">News & Media</a></li>
+                                    <li><a href="#">Faculties & Departments</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix" id="coppy-right">
+            <div class="container">
+                <div class="coppy-right">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-7">
+                            <p>© 2017 Powered by <a href="https://www.corelabsplus.com">Core Labs+ Ltd.</a> All rights reserved.</p>
+                        </div>
+
+                        <div class="col-sm-5 col-md-5">
+                            <div class="rit-social no-name pull-right" >
+                                <ul class="social-share">
+                                    <li class="twitter">
+                                        <a href="http://www.twitter.com/username" target="_blank"><span>twitter</span><i class="fa fa-twitter"></i></a>
+                                    </li>
+
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/baotoan.nguyen.148" target="_blank"><span>facebook</span><i class="fa fa-facebook"></i></a>
+                                    </li>
+
+                                    <li class="dribbble">
+                                        <a href="http://www.dribbble.com/username" target="_blank"><span>dribbble</span><i class="fa fa-dribbble"></i></a>
+                                    </li>
+
+                                    <li class="skype">
+                                        <a href="skype:idbaotoan" target="_blank"><span>skype</span><i class="fa fa-skype"></i></a>
+                                    </li>
+
+                                    <li class="googleplus">
+                                        <a href="page" target="_blank"><span>google +</span><i class="fa fa-google-plus"></i></a>
+                                    </li>
+
+                                    <li class="instagram">
+                                        <a href="http://instagram.com/username" target="_blank"><span>instagram</span><i class="fa-instagram fa"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .site-info -->
+    </footer>
+
+
+
+    <script type='text/javascript' src='{% static "js/skip-link-focus-fix.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/functions.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/owl.carousel.min.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/jquery.sticky.js" %}'></script>
+
+    <script type='text/javascript' src='{% static "js/bootstrap.min.js" %}'></script>
+    
+
+    <script type='text/javascript' src='{% static "js/jquery.multiscroll.js" %}'></script>
+    
+    <script type='text/javascript' src='{% static "js/rit.js" %}'></script>
+
+    
+    <script type='text/javascript' src='{% static "js/hoverIntent.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/maxmegamenu.js" %}'></script>
+    
+
+    <script type='text/javascript' src='{% static "js/charitable.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/jquery.slicknav.min.js" %}'></script>
+    
+    <script type='text/javascript' src='{% static "js/js_composer_front.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/skrollr.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "js/vc-accordion.min.js" %}'></script>
+    <script src="{% static 'js/panel-control.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+
+    <script>
+        new WOW().init();
+    </script>
+    
+
+</body>
+</html>

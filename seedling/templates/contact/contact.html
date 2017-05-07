@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block ourMenu %}
+
+	{% for article in ours %}
+
+	<article class="rit-recent-item clear-left col-sm-4 col-md-4" id="p ">
+	    <div class="rit-course-inner">
+	        <div class="post-meta">
+	            <h5><a href=" ">{{article.name}}</a></h5>
+	        </div>
+
+	        <div class="post-image clearfix">
+	            <a href=" ">
+	                <img width="370" height="250" src="{{article.image.url}}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 370px) 100vw, 370px">
+	            </a>
+
+	        </div>
+
+	        <div class="post-info">
+	            <div class="course-raise">
+	                <span class="number-raise">
+	                    {{article.caption}}
+	                </span>
+	            </div>
+	        </div>
+	    </div>
+	</article>
+
+	{% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+<br>
+
+<!-- CONTENTS CONTACT US -->
+
+
+<div class="container wow fadeInDown">
+    <div class="row">
+
+    <!-- SIDE 1 CONTENT -->
+
+        <div class="col-md-6">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, qui numquam laborum est magnam, minus, vero, odit sunt quos at soluta perspiciatis fugit porro voluptas mollitia fugiat reiciendis iste error!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, qui numquam laborum est magnam, minus, vero, odit sunt quos at soluta perspiciatis fugit porro voluptas mollitia fugiat reiciendis iste error</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, qui numquam laborum est magnam, minus, vero, odit sunt quos at soluta perspiciatis fugit porro voluptas mollitia fugiat reiciendis iste error</p>
+
+            <br>
+                <!--   SEND MESSAGE FORMS  -->
+
+            <h4>Send a message</h4>
+            <br>
+            <form role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control no-border" name="name" id="name"
+                    placeholder="Your name">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <input type="email" class="form-control no-border" name="email" id="email"
+                    placeholder="Your email">
+                </div>
+                <br>
+
+                <div class="form-group">
+                    <textarea class="form-control no-border" name="message" id="message"
+                    placeholder="Message"></textarea>
+                </div>
+
+                
+                <button type="submit" class="rit-button rit-button-accent">Submit</button>
+            </form>
+
+
+        </div>
+        <br>
+        <br>
+
+        <!-- END OF SIDE 1 CONTENT -->
+
+        <!-- SIDE 2 CONTENT -->
+
+        <div class="col-md-6">
+            <img src="images/about.jpg" alt="">
+            <br><br><br>
+
+            <h4>Our address</h4>
+            <br>
+            <ul class="no-list-style">
+                <li>Lorem ipsum, dolor sit, amet.</li>
+                <li>Lorem ipsum, dolor sit, amet.</li>
+                <li>Lorem ipsum, dolor sit, amet.</li>
+            </ul>
+
+            <br>
+
+            <ul class="no-list-style">
+                <li>+00 1122334455</li>
+                <li>+00 1122334455</li>
+                <br>
+                <li>email@company.org</li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
