@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block title %}
+
+<title>{{post.title}}</title>
+
+{% endblock %}
+
 {% block ourMenu %}
 
 	{% for article in ours %}
