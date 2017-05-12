@@ -47,29 +47,63 @@
         </div>
     </div>
     <br>
-    <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <h4>Add comment</h4>
+    <!-- COMMENTS & LIKE SECTION -->
+    <br>
+    <div class="row wow fadeInUp" id="comli">
+        <div class="col-sm-6 col-md-6">
+            <h4 class="pull-left">Comments ({{num_comments}})</h4>
+
+            <!-- LIKE -->
+
+            <form action="like" id="like" method="POST"> {% csrf_token %}
+                <input type="hidden" name="articleId" id="articleId" value="{{article.pk}}">
+                <button type="submit" class="pull-right"><i class="fa fa-thumbs-up fa-2x"></i> ({{article.likes}})</button>
+            </form>
+
+            <br>
+            <br>
+
+            <!-- COMMENTS -->
+
+            <ul>
+            {% for item in comments %}
+                <li>
+                    <div>
+                        <h5>{{item.by}}</h5>
+                        <p>{{item.comment}}</p>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+
+            <br><br>
+
+
+
+            <h4>Add your comment</h4>
+            <br>
+            <form id="comment" class="comment" action="comment" role="form" method="POST">{% csrf_token %}
+                <div class="form-group">
+                    <input type="hidden" value="{{article.pk}}" name="refid" id="refid">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control no-border" name="name" id="name"
+                    placeholder="Your name" required>
+                </div>
                 <br>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control no-border" name="name" id="name"
-                        placeholder="Your name">
-                    </div>
-                    <br>
 
-                    <div class="form-group">
-                        <textarea class="form-control no-border" name="message" id="comment"
-                        placeholder="Comment"></textarea>
-                    </div>
+                <div class="form-group">
+                    <textarea class="form-control no-border" name="comment" id="comment"
+                    placeholder="Comment" required></textarea>
+                </div>
 
-                    
-                    <button type="submit" class="rit-button rit-button-accent">Add Comment</button>
-                </form>
-            </div>
+                
+                <button type="submit" class="rit-button rit-button-accent">Comment</button>
+            </form>
+        </div>
     </div>
 </div>
 
-
-
 {% endblock %}
+

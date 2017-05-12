@@ -25,7 +25,7 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls'), name='blog'),
     url(r'^publications/', include('publications.urls'), name='publications'),
     url(r'^about$', include('about.urls'), name='blog'),
-    url(r'^contact$', include('contact.urls'), name='blog'),
+    url(r'^contact/', include('contact.urls'), name='blog'),
 
 ]
 

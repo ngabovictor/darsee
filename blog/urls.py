@@ -7,6 +7,8 @@ urlpatterns = [
 
     url(r'^$', views.blog, name='index'),
     url(r'^article/(?P<article_id>\d+)', views.post, name= 'article'),
+    url(r'^article/comment', views.comment, name='comment'),
+    url(r'^article/like', views.like, name="like"),
 ]
 
 if settings.DEBUG:

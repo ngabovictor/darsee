@@ -58,7 +58,7 @@
 
             <h4>Send a message</h4>
             <br>
-            <form role="form">
+            <form role="form" method="POST" action="send"> {% csrf_token %}
                 <div class="form-group">
                     <input type="text" class="form-control no-border" name="name" id="name"
                     placeholder="Your name">

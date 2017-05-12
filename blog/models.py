@@ -10,6 +10,7 @@ class articles(models.Model):
 	image = models.FileField(upload_to = 'blog_media', default = 'Please, use images of the same sizes (dimensions)')
 	likes = models.IntegerField(default = 0)
 	views = models.IntegerField(default = 0)
+	comments_count = models.IntegerField(default = 0)
 	comments = models.IntegerField(default = 0)
 	date = models.DateField(default = datetime.now())
 	body = models.TextField(default='Add Content')
@@ -24,4 +25,4 @@ class comments(models.Model):
 	ref = models.IntegerField()
 
 	def __str__(self):
-		return self.ref
+		return self.by

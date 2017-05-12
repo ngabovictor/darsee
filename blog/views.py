@@ -20,5 +20,31 @@ def post(request, article_id):
 	data = {}
 	data['article'] = articles.objects.get(pk=article_id)
 	data['comments'] = comments.objects.filter(ref=article_id)
+	data['num_comments'] = comments.objects.filter(ref=article_id).count()
 	data['ours'] = ours.objects.all()
 	return render(request, "blog/post.html", data)
+
+
+def comment(request):
+	if request.method == 'POST':
+		name = request.POST['name']
+		comment = request.POST['comment']
+		refid = request.POST['refid']
+
+		comments.objects.create(
+			by = name,
+			comment= comment,
+			ref = refid,
+			)
+		new_comments = comments.objects.filter(ref = refid).count()
+		articles.objects.filter(pk = refid).update(comments_count = new_comments)
+	return HttpResponseRedirect(refid+'#comli')
+
+def like(request):
+	if request.method == 'POST':
+		article = request.POST['articleId']
+		current_likes = articles.objects.get(pk=article).likes
+		new_likes = current_likes + 1
+		articles.objects.filter(pk=article).update(likes = new_likes)
+
+	return HttpResponseRedirect(article+'#comli')

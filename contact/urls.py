@@ -6,6 +6,7 @@ from . import views
 urlpatterns = [
 
     url(r'^$', views.contact, name='contact'),
+    url(r'^send$', views.send, name='send mail')
 ]
 
 if settings.DEBUG:
